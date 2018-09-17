@@ -84,23 +84,7 @@ socket.leave('some room');
 
 ```
 
-### client others
 
-```js
-var socket = io.connect("https://localhost:8082", {
-                query:                          'key=nokey',
-                'reconnection limit':           10000,
-                'max reconnection attempts':    Infinity,
-                reconnection:                false,
-                upgrade:                        false,
-                rememberUpgrade:       true,
-                transports:                     ['websocket']
-            });
-socket .on('connect', function () {
-      socket.emit('name', 'vis.0');
-      socket.emit('authenticate',  function () {});
-});
-```
 
 ### sources
 
